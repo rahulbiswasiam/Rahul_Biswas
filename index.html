@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Cursor glow -->
     <div class="cursor-glow" id="cursorGlow"></div>
 
@@ -27,6 +30,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
+                <li><a href="Rahul's Resume 2026.pdf" download class="nav-cta nav-resume"><i class="fas fa-download"></i> Resume</a></li>
             </ul>
         </div>
     </nav>
@@ -36,25 +40,26 @@
         <div class="hero-bg-grid"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <p class="hero-greeting reveal">Hi, I'm</p>
-                <h1 class="hero-name reveal">Rahul Biswas<span class="accent">.</span></h1>
+                <p class="hero-greeting reveal reveal-fade">Hi, I'm</p>
+                <h1 class="hero-name reveal reveal-fade">Rahul Biswas<span class="accent">.</span></h1>
                 <h2 class="hero-title reveal">
                     <span class="typing-wrapper">
                         <span id="typingText"></span><span class="cursor-blink">|</span>
                     </span>
                 </h2>
-                <p class="hero-desc reveal">3+ years crafting scalable test automation frameworks across Salesforce, web & telecom platforms. Passionate about quality engineering & AI.</p>
-                <div class="hero-actions reveal">
+                <p class="hero-desc reveal reveal-fade">3+ years crafting scalable test automation frameworks across Salesforce, web & telecom platforms. Passionate about quality engineering & AI.</p>
+                <div class="hero-actions reveal reveal-up">
                     <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
                     <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    <a href="Rahul's Resume 2026.pdf" download class="btn btn-primary btn-resume"><i class="fas fa-download"></i> Download Resume</a>
                 </div>
-                <div class="hero-socials reveal">
+                <div class="hero-socials reveal reveal-up">
                     <a href="https://linkedin.com/in/rahulbiswas99" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/rahulbiswas12" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="mailto:rahulbiswas181200@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-            <div class="hero-image reveal">
+            <div class="hero-image reveal reveal-scale">
                 <div class="hero-image-wrapper">
                     <img src="Rahul's Photo.png" alt="Rahul Biswas">
                     <div class="hero-image-ring"></div>
@@ -71,14 +76,14 @@
     <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title reveal">About Me<span class="accent">.</span></h2>
+            <h2 class="section-title reveal reveal-up">About Me<span class="accent">.</span></h2>
             <div class="about-grid">
-                <div class="about-text reveal">
+                <div class="about-text reveal reveal-left">
                     <p>Results-driven <strong>Automation Test Engineer</strong> with 3+ years of experience architecting and executing scalable test automation frameworks across <strong>Salesforce, web, and telecom</strong> platforms.</p>
                     <p>Expert in <strong>Python, Selenium, Playwright, Robot Framework</strong>, and <strong>Copado Robotic Testing</strong>, with deep hands-on experience in test case design, defect life cycle management, ETL testing, and CI/CD-integrated QA workflows.</p>
                     <p>Strong background in <strong>Agile/Scrum, BDD, STLC/SDLC</strong>, and cross-functional collaboration to deliver high-quality software across complex telecom environments.</p>
                 </div>
-                <div class="about-stats reveal">
+                <div class="about-stats reveal reveal-right">
                     <div class="stat-card">
                         <span class="stat-number" data-count="3">0</span><span class="accent">+</span>
                         <span class="stat-label">Years Experience</span>
@@ -103,9 +108,9 @@
     <!-- Skills Section -->
     <section class="section section-alt" id="skills">
         <div class="container">
-            <h2 class="section-title reveal">Tech Stack<span class="accent">.</span></h2>
+            <h2 class="section-title reveal reveal-up">Tech Stack<span class="accent">.</span></h2>
             <div class="skills-grid">
-                <div class="skill-category reveal">
+                <div class="skill-category reveal reveal-scale">
                     <div class="skill-icon"><i class="fas fa-robot"></i></div>
                     <h3>Automation Tools</h3>
                     <div class="skill-tags">
@@ -117,7 +122,7 @@
                         <span class="tag">Postman</span>
                     </div>
                 </div>
-                <div class="skill-category reveal">
+                <div class="skill-category reveal reveal-scale">
                     <div class="skill-icon"><i class="fas fa-code"></i></div>
                     <h3>Programming</h3>
                     <div class="skill-tags">
@@ -127,7 +132,7 @@
                         <span class="tag">JavaScript</span>
                     </div>
                 </div>
-                <div class="skill-category reveal">
+                <div class="skill-category reveal reveal-scale">
                     <div class="skill-icon"><i class="fas fa-vial"></i></div>
                     <h3>Testing Types</h3>
                     <div class="skill-tags">
@@ -141,7 +146,7 @@
                         <span class="tag">BDD / TDD</span>
                     </div>
                 </div>
-                <div class="skill-category reveal">
+                <div class="skill-category reveal reveal-scale">
                     <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
                     <h3>Frameworks</h3>
                     <div class="skill-tags">
@@ -152,7 +157,7 @@
                         <span class="tag">SDLC / STLC</span>
                     </div>
                 </div>
-                <div class="skill-category reveal">
+                <div class="skill-category reveal reveal-scale">
                     <div class="skill-icon"><i class="fas fa-tools"></i></div>
                     <h3>Tools & Platforms</h3>
                     <div class="skill-tags">
@@ -164,7 +169,7 @@
                         <span class="tag">Huawei OSS</span>
                     </div>
                 </div>
-                <div class="skill-category reveal">
+                <div class="skill-category reveal reveal-scale">
                     <div class="skill-icon"><i class="fas fa-brain"></i></div>
                     <h3>AI / GenAI</h3>
                     <div class="skill-tags">
@@ -183,9 +188,9 @@
     <!-- Experience Section -->
     <section class="section" id="experience">
         <div class="container">
-            <h2 class="section-title reveal">Experience<span class="accent">.</span></h2>
+            <h2 class="section-title reveal reveal-up">Experience<span class="accent">.</span></h2>
             <div class="timeline">
-                <div class="timeline-item reveal">
+                <div class="timeline-item reveal reveal-left">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
@@ -211,9 +216,9 @@
     <!-- Projects Section -->
     <section class="section section-alt" id="projects">
         <div class="container">
-            <h2 class="section-title reveal">Projects<span class="accent">.</span></h2>
+            <h2 class="section-title reveal reveal-up">Projects<span class="accent">.</span></h2>
             <div class="projects-grid">
-                <div class="project-card reveal">
+                <div class="project-card reveal reveal-up tilt-card">
                     <div class="project-number">01</div>
                     <h3>Global Sitetracker</h3>
                     <div class="project-tags">
@@ -226,7 +231,7 @@
                         <li>Developed Python scripts for test data preparation and defect reporting workflows.</li>
                     </ul>
                 </div>
-                <div class="project-card reveal">
+                <div class="project-card reveal reveal-up tilt-card">
                     <div class="project-number">02</div>
                     <h3>MBNL &mdash; ETL Migration & RAN ENM Upgrade</h3>
                     <div class="project-tags">
@@ -239,7 +244,7 @@
                         <li>Monitored KPI accuracy via Grafana and managed bug reporting through full defect life cycle in JIRA.</li>
                     </ul>
                 </div>
-                <div class="project-card reveal">
+                <div class="project-card reveal reveal-up tilt-card">
                     <div class="project-number">03</div>
                     <h3>LCOS &mdash; Network Device Management Tool</h3>
                     <div class="project-tags">
@@ -259,15 +264,15 @@
     <!-- Education & Certifications -->
     <section class="section" id="education">
         <div class="container">
-            <h2 class="section-title reveal">Education & Certifications<span class="accent">.</span></h2>
+            <h2 class="section-title reveal reveal-up">Education & Certifications<span class="accent">.</span></h2>
             <div class="edu-cert-grid">
-                <div class="edu-card reveal">
+                <div class="edu-card reveal reveal-left">
                     <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
                     <h3>B.Tech in Information Technology</h3>
                     <p class="edu-school">Siliguri Institute of Technology</p>
                     <p class="edu-meta">2018 &mdash; 2022 &bull; CGPA: 8.44/10.0</p>
                 </div>
-                <div class="certs-card reveal">
+                <div class="certs-card reveal reveal-right">
                     <h3><i class="fas fa-certificate"></i> Certifications</h3>
                     <div class="cert-list">
                         <div class="cert-item">
@@ -295,8 +300,8 @@
     <!-- Contact Section -->
     <section class="section section-alt" id="contact">
         <div class="container">
-            <h2 class="section-title reveal">Let's Connect<span class="accent">.</span></h2>
-            <div class="contact-content reveal">
+            <h2 class="section-title reveal reveal-up">Let's Connect<span class="accent">.</span></h2>
+            <div class="contact-content reveal reveal-up">
                 <p class="contact-desc">I'm always open to discussing new opportunities, interesting projects, or just having a chat about test automation and quality engineering.</p>
                 <div class="contact-cards">
                     <a href="mailto:rahulbiswas181200@gmail.com" class="contact-card">
